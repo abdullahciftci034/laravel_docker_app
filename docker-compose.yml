@@ -1,10 +1,8 @@
-version: '3.8'
+version: '3.3'
 services:
   web:
-    build:
-      context: .
-      dockerfile: Dockerfile
+    build: ./larevel_app
     ports:
-      - 8000:80
+      - 83:80
     volumes:
-      - ./example_app:/var/www/html
+      - ./larevel_app:/var/www/html
