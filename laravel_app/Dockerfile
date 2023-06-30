@@ -14,4 +14,4 @@ RUN apt-get install -yq php-mbstring
 RUN apt-get install -yq php-xml 
 RUN apt-get install -yq php-curl
 WORKDIR /home/laravel_app
-CMD composer install && php artisan serve --host=0.0.0.0 --port=80
+CMD php artisan key:generate && composer install && php artisan serve --host=0.0.0.0 --port=80
