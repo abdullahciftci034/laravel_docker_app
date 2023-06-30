@@ -1,8 +1,8 @@
 version: '3.3'
 services:
   web:
-    build: ./larevel_app
+    build: ./laravel_app
     ports:
       - 83:80
     volumes:
-      - ./larevel_app:/var/www/html
+      - ./laravel_app/app:/home/laravel_app
